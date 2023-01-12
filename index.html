@@ -452,5 +452,23 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="./main.js"></script>
+
+<script>
+    // slider for testimonials section
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+//    when window width is >= 600px
+        breakpoints:{
+            600: {
+                slidesPerView: 2
+            }
+        }
+    });
+</script>
 </body>
 </html>
